@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.google.com/specimen/Poppins?query=Awa');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #e8c92f;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header img {
+    height: 80px;
+    margin-left: 75px;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Jersey 10';
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+main section:first-of-type {
+    text-align: center;
+    background-image: url(photos/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section:first-of-type h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main section:first-of-type button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #c72828;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin: 10px auto;  
+    margin-top: 40px;  
+}
+
+main section:first-of-type button:hover {
+    background-color: #8b0000;
+}
+
+main section:nth-of-type(2) {
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #10141f;
+    color: white;
+    padding: 20px;
+}
+
+#collections h2 {
+    font-size: 35px;
+    margin-left: 90px ;
+}
+
+#collections div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#collections div a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: auto;
+}
+
+#collections div a img {
+    display: block;
+    width: 430px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#collections div a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#collections div a:hover::before {
+    opacity: 1;
+}
+
+#audios {
+    margin: 70px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+#audios h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+#audios div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #2b609f;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+    color: white;
+    line-height: 2.5;
+}
+
+#audios div picture img {
+    width: 400px;
+    height: auto;
+}
+
+#audios div p {
+    flex: 1;
+    margin: 0;
+}
+
+#audios div audio {
+    margin-top: 10px; /* Ajouter un peu d'espacement entre le texte et le lecteur audio */
+    width: 100%; /* Étendre le lecteur audio sur toute la largeur du texte */
+    max-width: 300px; /* Limiter la largeur maximale du lecteur audio */
+}
+
+/* Section Videos */
+#videos {
+    text-align: center;
+}
+
+#videos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#videos div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#videos div video {
+    max-width: 100%;
+    height: auto;
+}
+
+#artistes {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#artistes h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#artistes div {
+    display: grid;
+    grid-template-columns: repeat(6, 13rem); 
+    gap: 15px; 
+    justify-items: center; 
+    max-width: 100%;
+}
+
+#artistes div picture img {
+    height: 200px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+#artistes div a img:hover {
+    transform: scale(1.1);
+}
+
+#apropos {
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#apropos h2 {
+    font-size: 30px;
+}
+
+#apropos h3 {
+    font-size: 30px;
+}
+
+#apropos p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contact {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #2c609b;
+    margin: 225px;
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+
+#contact h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#contact form label {
+    text-align: left;
+    color: white;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact form input {
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #c72828;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    
+}
+
+#contact form input[type="file"] {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#contact form button:hover {
+    background-color: #8b0000;
+}
+
+footer {
+    font-family: 'Jersey 10';
+    background-color: #e8c92f;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}

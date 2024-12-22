@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maquette évaluée</title>
+</head>
+<body>
+    <header>
+        <img src="photos/logo.svg" alt="logo guitare rouge">
+        <h1>SongUniverse</h1>
+        <nav>
+            <ul>
+                <li><a href=#collections>COLLECTIONS</a></li>
+                <li><a href=#apropos>A PROPOS</a></li>
+                <li><a href=#contact>CONTACTEZ-NOUS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Explorez un univers sonore généré par l'IA</h1>
+            <button onclick="window.location.href='#collections'">Explorer</button>
+        </section>
+        <section>
+            Il est parfois dur de trouver le genre musical parfait qui convient à nos goûts.
+            <br>
+            Sur cette plateforme nous mettons en valeur des genre musicaux moins connus.
+        </section>
+    </main>
+
+    <section id="collections">
+        <h2>COLLECTIONS</h2>
+        <div>
+            <a href=#audios data-text="AUDIO">
+                <picture>
+                    <source srcset="photos/collection-audio.png" type="image/webp">
+                    <img src="photos/collection-audio.png" alt="casque noir, renvoie à la section des audios">
+                </picture>
+            </a>
+            <a href=#videos data-text="VIDEO">
+                <picture>
+                    <source srcset="photos/collection-video.png" type="image/webp">
+                    <img src="photos/collection-video.png" alt="boitier numérique, renvoie à la section des vidéos">
+                </picture>
+            </a>
+            <a href=#artistes data-text="ARTISTES">
+                <picture>
+                    <source srcset="photos/collection-artiste.png" type="image/webp">
+                    <img src="photos/collection-artiste.png" alt="jeune homme sur une table de mixage, renvoie à la section artiste">
+                </picture>
+            </a>
+        </div>
+    </section>
+
+    <section id="audios">
+        <h2>AUDIOS</h2>
+        <div>
+            <picture>
+                <source srcset="photos/audio1.png" type="image/webp">
+                <img src="photos/audio1.png" alt="ouverture d'album musical avec des phaons">
+            </picture>
+            <p>
+                <b>TITRE :</b> Карна
+                <br>
+                <b>Style :</b> #carnatic
+                <br>
+                <b>Artiste :</b> Леонід Українець
+            </p>
+            <audio controls>
+                <source src="audios/audio1.mp3" type="audio/mpeg">
+                <source src="audios/audio1.wav" type="audio/wave">
+                <source src="audios/audio1.aac" type="audio/aac">
+                Votre navigateur ne prend pas en charge la lecture audio,
+                veuillez <a href="audios/audio1.mp3" download>télécharger</a> le fichier audio.
+            </audio>
+        </div>
+        <div>
+            <picture>
+                <source srcset="photos/audio2.png" type="image/webp">
+                <img src="photos/audio2.png" alt="couverture d'album musical avec un violon et des nuages">
+            </picture>
+            <p>
+                <b>TITRE :</b> Viola I
+                <br>
+                <b>Style :</b> #handpan #dark #electro #cryptic #violin
+                <br>
+                <b>Artiste :</b> insaneruediger
+            </p>
+            <audio controls>
+                <source src="audios/audio2.mp3" type="audio/mpeg">
+                <source src="audios/audio2.wav" type="audio/wave">
+                <source src="audios/audio2.aac" type="audio/aac">
+                Votre navigateur ne prend pas en charge la lecture audio,
+                veuillez <a href="audios/audio2.mp3" download>télécharger</a> le fichier audio.
+            </audio>
+        </div>
+        <div>
+            <picture>
+                <source srcset="photos/audio3.png" type="image/webp">
+                <img src="photos/audio3.png" alt="couverture d'album musical avec des palmiers">
+            </picture>
+            <p>
+                <b>TITRE :</b> SASA
+                <br>
+                <b>Style :</b> #maloya
+                <br>
+                <b>Artiste :</b> LarryP
+            </p>
+            <audio controls>
+                <source src="audios/audio3.mp3" type="audio/mpeg">
+                <source src="audios/audio3.wav" type="audio/wave">
+                <source src="audios/audio3.aac" type="audio/aac">
+                Votre navigateur ne prend pas en charge la lecture audio,
+                veuillez <a href="audios/audio3.mp3" download>télécharger</a> le fichier audio.
+            </audio>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>VIDEOS</h2>
+        <div>
+            <figure>
+                <video controls height="300" width="400" autoplay muted>
+                    <source src="vidéos/loficity.mp4" type="video/mp4">
+                    <source src="vidéos/loficity.mp4" type="video/webm">
+                </video>
+            </figure>
+            <figcaption>LOFICITY</figcaption>
+        </div>
+        <div>
+            <figure>
+                <video controls height="350" width="400" autoplay muted>
+                    <source src="vidéos/dragon.mp4" type="video/mp4">
+                    <source src="vidéos/dragon.mp4" type="video/webm">
+                </video>
+            </figure>
+            <figcaption>DRAGON FIRE</figcaption>
+        </div>
+    </section>
+
+    <section id="artistes">
+        <h2>ARTISTES</h2>
+        <div>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste1.png" type="image/webp">
+                    <img src="photos/artiste1.png" alt="nuages multicolores dans un ciel rose">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste2.png" type="image/webp">
+                    <img src="photos/artiste2.png" alt="robot sur une table de mixage">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste3.png" type="image/webp">
+                    <img src="photos/artiste3.png" alt="dégradé de violet foncé">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste4.png" type="image/webp">
+                    <img src="photos/artiste4.png" alt="ours polaire qui porte un casque audio">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste5.png" type="image/webp">
+                    <img src="photos/artiste5.png" alt="gradient de rouge et violet">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste6.png" type="image/webp">
+                    <img src="photos/artiste6.png" alt="bougie dont la flamme est une plume">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste7.png" type="image/webp">
+                    <img src="photos/artiste7.png" alt="chat gris avec des lunettes">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste8.png" type="image/webp">
+                    <img src="photos/artiste8.png" alt="femme pâle aux cheveux gris">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste9.png" type="image/webp">
+                    <img src="photos/artiste9.png" alt="texte blanc Teste di serie sur un fond de mer bleue clair">                
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste10.png" type="image/webp">
+                    <img src="photos/artiste10.png" alt="chat noir regardant un papillon">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste11.png" type="image/webp">
+                    <img src="photos/artiste11.png" alt="peluche mignonne bleue et blanche">
+                </picture>
+            </a>
+            <a href=#artistes>
+                <picture>
+                    <source srcset="photos/artiste12.png" type="image/webp">
+                    <img src="photos/artiste12.png" alt="gradient magenta et vert pomme">
+                </picture>
+            </a>
+        </div>
+    </section>
+    <section id="apropos">
+        <h2>A PROPOS</h2>
+        <picture>
+            <source srcset="photos/about-us.png" type="image/webp">
+            <img src="photos/about-us.png" alt="dessin d'un homme et d'une femme souriants">
+        </picture>
+        <h3>"La musique est le reflet de l'âme"</h3>
+        <p>
+            Eternelle insatisfait nous ne nous retrouvions pas dans les genres musicaux existants.
+            <br>
+            Musiciens, chanteurs et compositeurs nous avons parcourus le monde en recherche de nouveaux genre, puis est venu l’ère de l’IA ...
+        </p>
+    </section>
+
+    <section id="contact">
+        <h1>CONTACTEZ-NOUS</h1>
+        <p>
+            Vous souhaitez contribuer à cette plateforme ?
+            <br>
+            Envoyez-nous un message ou une musique !
+        </p>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="file">Envoyer une musique (optionnel)</label>
+            <input type="file" id="file" name="file" accept="audio/*">
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <h1>Copyright SongUniverse</h1>
+    </footer>
+</body>
+</html>
