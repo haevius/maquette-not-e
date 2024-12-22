@@ -19,6 +19,10 @@ header {
     padding: 0;
     justify-content: space-between;
     margin: 0;
+    position: sticky;
+    top: 0;
+    background-color: #e8c92f;
+    z-index: 10;
 }
 
 header img {
@@ -98,8 +102,7 @@ main section:first-of-type button {
     width: 300px;
     height: 60px;
     display: block;
-    margin: 10px auto;  
-    margin-top: 40px;  
+    margin: 10px auto; 
 }
 
 main section:first-of-type button:hover {
@@ -168,8 +171,8 @@ main section:nth-of-type(2) {
 }
 
 #audios {
-    margin: 70px;
-    padding: 20px;
+    margin: 90px;
+    padding: 0;
     margin-top: 0;
 }
 
@@ -180,52 +183,77 @@ main section:nth-of-type(2) {
 
 #audios div {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 0px;
     margin-bottom: 20px;
     background-color: #2b609f;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
     color: white;
     line-height: 2.5;
+    border-radius: 15px;
+}
+
+#audios .maindiv {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 #audios div picture img {
-    width: 400px;
+    width: 100%;
     height: auto;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#audios div .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
 }
 
 #audios div p {
-    flex: 1;
-    margin: 0;
+    margin-bottom: 55px; 
+    font-size: 25px;
 }
 
-#audios div audio {
-    margin-top: 10px; /* Ajouter un peu d'espacement entre le texte et le lecteur audio */
-    width: 100%; /* Étendre le lecteur audio sur toute la largeur du texte */
-    max-width: 300px; /* Limiter la largeur maximale du lecteur audio */
+#audios div .audio-container {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
-/* Section Videos */
+#audios div .audio-container audio {
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+}
+
+
 #videos {
     text-align: center;
-}
-
-#videos h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 0;
 }
 
 #videos div {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
 }
 
-#videos div video {
-    max-width: 100%;
-    height: auto;
+#videos video {
+    width: 625px;
+    height: 380px;
+    object-fit: cover;
+}
+
+#videos figcaption {
+    margin-top: 35px;
 }
 
 #artistes {
@@ -239,7 +267,7 @@ main section:nth-of-type(2) {
 
 #artistes h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -269,6 +297,7 @@ main section:nth-of-type(2) {
 
 #apropos h2 {
     font-size: 30px;
+    margin-bottom: 50px;
 }
 
 #apropos h3 {
@@ -337,10 +366,10 @@ main section:nth-of-type(2) {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 200px;
+    width: 250px;
+    height: 60px;
     display: block;
-    margin: 10px auto;
-    
+    margin: 10px auto; 
 }
 
 #contact form input[type="file"] {
